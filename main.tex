@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+% \usepackage{tgheros}
+% \renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % enhanced Computer Modern
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{0pt} \raggedright \large
+}{}{0em}{}[\color{light-grey} {\titlerule[1.5pt]} \vspace{-6pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+% \color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+{\Huge \scshape Arshia Chandarki}
+ \\[6pt]
+\small
+% \faPhone*~9325835557 \;|\;
+\href{mailto:arshichandarki@gmail.com}{\faEnvelope~arshichandarki@gmail.com} \;|\;
+\href{https://www.linkedin.com/in/arshia-chandarki-891a03289/}{\faLinkedin~linkedin.com/in/arshia} \;|\;
+\href{https://github.com/arshia-sudo}{\faGithub~arshia-sudo} \;|\;
+\href{https://arshiaportfolio.vercel.app/}{\\arshiaporfolio} \;|\;
+\faMapMarker*~Pune, Maharashtra
+\end{center}
+
+
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Trinity College of Engineering and Research}{2022 -- 2026}
+      {B.E. in Computer Engineering}{Pune, Maharashtra}
+      \resumeSubheading
+      {Mansukhbhai Kothari National School (CBSE)}{2020 --  2022}
+      {Grade XII : 83 percent, Grade X : 90 percent}{Pune, Maharashtra}
+      	
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FitFare Private Ltd }{Sept. 2025 -- Present}
+      {Full Stack Developer} {}
+      \resumeItemListStart
+        \resumeItem{Built and optimized feature-rich dashboards and user workflows using React, TypeScript, and JavaScript, focusing on performance, accessibility, and scalable component architecture.}
+        \resumeItem{Assisted in developing and consuming REST APIs, managing MySQL databases, and integrating Firebase authentication and real-time services.}
+         
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bluestock}{Aug 2025 -- Jan 2026}
+      {Software Developer Intern}{}
+      \resumeItemListStart
+        \resumeItem{{Led development} of a financial analytics dashboard to reduce data latency by 50 percent via live WebSocket integration}
+        \resumeItem{Collaborated with backend services and APIs to implement secure, scalable data flows, improving dashboard reliability and real-time update accuracy.}
+        
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Infosys}{Oct 2024 -- Mar 2025}
+      {Java Development Intern}{}
+      \resumeItemListStart
+        \resumeItem{Supported backend development using Java and Spring Boot, contributing to API integration and improving overall development turnaround through low-code support with Bubble.io.}
+        \resumeItem{Assisted in H2 database management and backend workflow optimization, collaborating with the team to streamline data handling and reduce implementation effort.}
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Code Genie | ReactJS, Tailwind CSS,  Flask , 
+Monaco Compiler (custom), AI Models, 
+Voice Integration 
+}} {Sept. 2019 -- Mar. 2021}
+          \resumeItemListStart
+            \resumeItem{●Code Explanation + Generation , AI-assisted coding platform with error detection, chatbot support, and voice-enabled guidance. }
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Doc AI – Healthcare Portal | Python, 
+MongoDB, React 
+}}{Sept. 2020 -- Nov. 2020}
+          \resumeItemListStart
+            \resumeItem{●	Built AI/ML-based chronic disease prediction with QR records. }
+          \resumeItemListEnd
+        
+      \resumeProjectHeading
+         {\textbf{RentWheelz – Car Rental Website | Java, 
+SpringBoot, H2 DB  
+}}{Sept. 2019 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{●	Developed JWT-secured platform with realtime booking and Payment Integration.}
+            
+          \resumeItemListEnd
+          \resumeProjectHeading
+         {\textbf{Compliance Tracker - Web Application | C#, 
+ASP.NET MVC, SQL Server   
+}}{Sept. 2019 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{●Developed a role-based compliance management portal with CRUD operations, authentication, and analytics track and manage organizational legal tasks efficiently. }
+            
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small\item{
+    \textbf{Languages:} C/C++, Java, Python, JavaScript, TypeScript \\
+    \textbf{Web \& Frameworks:} HTML, CSS, React.js, Node.js, Express.js \\
+    \textbf{Databases:} MySQL, PostgreSQL, MongoDB \\
+    \textbf{Version Control:} Git, GitHub\\
+    \textbf{Cloud/Tools:} AWS, Postman \\
+  }
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
